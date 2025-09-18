@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -244,7 +245,58 @@ const Blogs = () => {
             Load More Articles
           </Button>
         </div>
+
+        {/* Developers Section */}
+        <Card className="mt-12 bg-gradient-card border-border/50">
+          <CardContent className="p-8">
+            <h3 className="text-2xl font-bold mb-6 text-center">Meet Our Development Team</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl text-white mx-auto mb-4">
+                  👨‍💻
+                </div>
+                <h4 className="font-semibold text-lg">Alex Chen</h4>
+                <p className="text-muted-foreground text-sm mb-2">Lead Full-Stack Developer</p>
+                <p className="text-xs text-muted-foreground">
+                  React, Node.js, Supabase specialist with 5+ years building pet-focused applications
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl text-white mx-auto mb-4">
+                  👩‍💻
+                </div>
+                <h4 className="font-semibold text-lg">Sarah Rodriguez</h4>
+                <p className="text-muted-foreground text-sm mb-2">UI/UX Designer & Frontend Developer</p>
+                <p className="text-xs text-muted-foreground">
+                  Passionate about creating beautiful, accessible interfaces for pet lovers
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl text-white mx-auto mb-4">
+                  👨‍💻
+                </div>
+                <h4 className="font-semibold text-lg">Michael Kim</h4>
+                <p className="text-muted-foreground text-sm mb-2">Backend Developer & DevOps</p>
+                <p className="text-xs text-muted-foreground">
+                  Database architect and API specialist ensuring secure, scalable pet services
+                </p>
+              </div>
+            </div>
+            
+            <div className="text-center mt-8">
+              <p className="text-muted-foreground mb-4">
+                Our team is dedicated to connecting pet owners with the best local services through innovative technology.
+              </p>
+              <Button variant="outline">
+                Join Our Team
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
       </div>
+      <Footer />
     </div>
   );
 };

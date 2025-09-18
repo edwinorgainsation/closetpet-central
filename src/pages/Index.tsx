@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
 import LocationSearch from "@/components/LocationSearch";
 import { Button } from "@/components/ui/button";
@@ -152,6 +153,7 @@ const Index = () => {
           </Button>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

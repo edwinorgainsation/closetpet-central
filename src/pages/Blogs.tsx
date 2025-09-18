@@ -7,12 +7,11 @@ import { Badge } from "@/components/ui/badge";
 import { Search, Calendar, User, Heart, MessageCircle, Share } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { authors } from "@/data/authors";
+import { blogArticles, getArticlesByCategory } from "@/data/blogArticles";
+import { Link } from "react-router-dom";
 
 const Blogs = () => {
-  const articles = [
-    // [Same article objects as before — not repeated here to save space]
-    // Just reuse the same article list you already have.
-  ];
+  const articles = blogArticles;
 
   const categories = [
     "All Articles", "Dog Care", "Cat Care", "Exotic Pets", "Nutrition", "Health", "Behavior", "Training", "Emergency Care"
@@ -119,9 +118,11 @@ const Blogs = () => {
                     <Button variant="ghost" size="sm">
                       <Share className="h-4 w-4" />
                     </Button>
-                    <Button size="sm" className="bg-gradient-primary hover:opacity-90">
-                      Read More
-                    </Button>
+                    <Link to={`/blog/${article.id}`}>
+                      <Button size="sm" className="bg-gradient-primary hover:opacity-90">
+                        Read More
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </CardContent>

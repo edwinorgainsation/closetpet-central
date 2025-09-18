@@ -5,10 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Search, MapPin, Star, Clock, Phone, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const VetsCare = () => {
   const veterinarians = [
     {
+      id: "dr-sarah-johnson",
       name: "Dr. Sarah Johnson",
       clinic: "Compassionate Animal Clinic",
       rating: 4.9,
@@ -20,6 +22,7 @@ const VetsCare = () => {
       services: ["Vaccination", "Surgery", "Emergency Care"]
     },
     {
+      id: "dr-michael-chen",
       name: "Dr. Michael Chen",
       clinic: "City Pet Hospital",
       rating: 4.8,
@@ -31,6 +34,7 @@ const VetsCare = () => {
       services: ["Exotic Care", "Surgery", "Dental"]
     },
     {
+      id: "dr-emily-rodriguez",
       name: "Dr. Emily Rodriguez",
       clinic: "Gentle Paws Veterinary",
       rating: 4.7,
@@ -42,6 +46,7 @@ const VetsCare = () => {
       services: ["Orthopedic", "Surgery", "Rehabilitation"]
     },
     {
+      id: "dr-robert-kim",
       name: "Dr. Robert Kim",
       clinic: "24/7 Animal Emergency",
       rating: 4.6,
@@ -160,9 +165,14 @@ const VetsCare = () => {
                     <Button variant="outline">
                       Call Now
                     </Button>
-                    <Button className="bg-gradient-primary hover:opacity-90">
-                      Book Appointment
-                    </Button>
+                    <Link to={`/details/vet/${vet.id}`}>
+                      <Button variant="outline">View Details</Button>
+                    </Link>
+                    <Link to={`/book-appointment/${vet.id}`}>
+                      <Button className="bg-gradient-primary hover:opacity-90">
+                        Book Appointment
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </CardContent>

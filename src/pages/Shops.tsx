@@ -11,10 +11,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Search, MapPin, Star, Filter } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Shops = () => {
   const shops = [
     {
+      id: "pawsome-pet-store",
       name: "Pawsome Pet Store",
       rating: 4.8,
       distance: "2.1 miles",
@@ -27,6 +29,7 @@ const Shops = () => {
       tags: ["Food", "Toys", "Accessories"]
     },
     {
+      id: "fur-feathers",
       name: "Fur & Feathers",
       rating: 4.9,
       distance: "3.5 miles",
@@ -38,6 +41,7 @@ const Shops = () => {
       tags: ["Exotic Pets", "Birds", "Reptiles"]
     },
     {
+      id: "happy-tails-market",
       name: "Happy Tails Market",
       rating: 4.7,
       distance: "1.8 miles",
@@ -50,6 +54,7 @@ const Shops = () => {
       tags: ["Organic", "Natural", "Health"]
     },
     {
+      id: "pet-paradise",
       name: "Pet Paradise",
       rating: 4.6,
       distance: "4.2 miles",
@@ -135,7 +140,9 @@ const Shops = () => {
                   <Button className="flex-1 bg-gradient-primary hover:opacity-90">
                     Visit Store
                   </Button>
-                  <Button variant="outline">View Details</Button>
+                  <Link to={`/details/shop/${shop.id}`}>
+                    <Button variant="outline">View Details</Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>

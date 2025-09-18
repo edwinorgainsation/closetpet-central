@@ -14,7 +14,7 @@ import {
   Users,
   Award
 } from "lucide-react";
-import heroImage from "@/assets/heroes-bg.png";
+import heroImage from "@/assets/hero-pets.jpg";
 
 const Index = () => {
   const [selectedService, setSelectedService] = useState<string>("");
@@ -148,9 +148,11 @@ const Index = () => {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Join thousands of pet owners who trust ClosetPet for all their pet care needs.
           </p>
-          <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
-            Start Your Journey
-          </Button>
+          <a href="/signup">
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
+              Start Your Journey
+            </Button>
+          </a>
         </div>
       </section>
       <Footer />

@@ -41,7 +41,7 @@ const LocationSearch = () => {
                 className={
                   selectedService === service
                     ? "bg-gradient-primary hover:opacity-90"
-                    : "hover:bg-secondary"
+                    : "hover:bg-gradient-primary"
                 }
               >
                 {service}

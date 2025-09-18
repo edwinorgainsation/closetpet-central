@@ -93,9 +93,6 @@ const Footer = () => {
           <p className="text-primary-foreground/80 text-sm">
             © 2024 ClosetPet. All rights reserved.
           </p>
-          <div className="flex items-center gap-1 text-primary-foreground/80 text-sm mt-4 md:mt-0">
-            Made with <Heart className="h-4 w-4 text-red-400" /> for pet lovers everywhere
-          </div>
         </div>
       </div>
     </footer>

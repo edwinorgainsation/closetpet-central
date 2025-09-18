@@ -46,7 +46,7 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost">Sign In</Button>
+          <Button variant="ghost" className="hover:bg-gradient-hero">Sign In</Button>
           <Button className="bg-gradient-primary hover:opacity-90">
             Get Started
           </Button>
@@ -56,7 +56,7 @@ const Header = () => {
         <Button
           variant="ghost"
           size="sm"
-          className="md:hidden"
+          className="md:hidden bg-gradient-hero"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? (
@@ -85,8 +85,8 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <div className="pt-4 space-y-2">
-              <Button variant="ghost" className="w-full justify-start">
+            <div className="pt-4 text-center space-y-2">
+              <Button  className="w-full  text-center   hover:bg-gradient-hero ">
                 Sign In
               </Button>
               <Button className="w-full bg-gradient-primary hover:opacity-90">

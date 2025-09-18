@@ -14,7 +14,7 @@ import {
   Users,
   Award
 } from "lucide-react";
-import heroImage from "@/assets/hero-pets.jpg";
+import heroImage from "@/assets/heroes-bg.png";
 
 const Index = () => {
   const [selectedService, setSelectedService] = useState<string>("");
@@ -26,7 +26,7 @@ const Index = () => {
       icon: ShoppingBag,
     },
     {
-      title: "Exchange",
+      title: "Adoption & Rehoming",
       description: "Connect with other pet owners for breeding or rehoming",
       icon: RefreshCw,
     },
@@ -80,7 +80,7 @@ const Index = () => {
               <Button size="lg" className="bg-gradient-primary hover:opacity-90 text-lg px-8 py-6">
                 Get Started Today
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+              <Button variant="outline" size="lg" className="text-lg bg-gradient-hero px-8 py-6">
                 Learn More
               </Button>
             </div>

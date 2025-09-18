@@ -9,7 +9,7 @@ const LocationSearch = () => {
   const [selectedService, setSelectedService] = useState("");
 
   const services = [
-    "Buy Pets", "Exchange Pets", "Breeding", "Pet Products", "Vaccination", "All Services"
+    "Buy Pets", "Adoption & Rehoming", "Breeding", "Pet Products", "Vaccination", "All Services"
   ];
 
   const handleSearch = () => {

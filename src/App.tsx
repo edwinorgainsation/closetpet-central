@@ -18,7 +18,7 @@ import Details from "./pages/Details";
 import BookAppointment from "./pages/BookAppointment";
 import BlogDetails from "./pages/BlogDetails";
 import SignUp from "@/pages/SignUp";
-import Login from "@/pages/Login";
+import SignIn from "@/pages/SignIn"; // ✅ Correct import
 import Dashboard from "./pages/dashboard";
 import NotFound from "./pages/NotFound";
 
@@ -42,7 +42,7 @@ const App = () => (
           <Route path="/details/:type/:id" element={<Details />} />
           <Route path="/book-appointment/:vetId" element={<BookAppointment />} />
           <Route path="/sign-up" element={<SignUp />} />
-          <Route path="/sign-in" element={<Login />} />
+          <Route path="/sign-in" element={<SignIn />} />
 
           {/* Protected Route */}
           <Route

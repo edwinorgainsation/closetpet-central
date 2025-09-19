@@ -17,8 +17,8 @@ import Contact from "./pages/Contact";
 import Details from "./pages/Details";
 import BookAppointment from "./pages/BookAppointment";
 import BlogDetails from "./pages/BlogDetails";
-import SignUp from "@/pages/SignUp";
-import SignIn from "@/pages/SignIn"; // ✅ Correct import
+import SignUp from "./pages/SignUp";
+import SignIn from "./pages/Signin"; // ✅ Correct import
 import Dashboard from "./pages/dashboard";
 import NotFound from "./pages/NotFound";
 

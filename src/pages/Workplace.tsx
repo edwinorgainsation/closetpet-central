@@ -62,7 +62,7 @@ const Workplace = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <div className="container py-8">
+      <div className="container px-4  py-8">
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold mb-4">Pet Industry Careers</h1>

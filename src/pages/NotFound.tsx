@@ -68,7 +68,7 @@ const NotFound = () => {
     <div className="min-h-screen bg-background">
       <Header />
 
-      <div className="container py-8">
+      <div className="container px-4  py-8">
         {/* Main 404 Content */}
         <div className="text-center mb-12">
           <div className="mb-8">

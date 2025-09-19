@@ -64,7 +64,7 @@ const Index = () => {
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
-        <div className="container relative z-10">
+        <div className="container px-4 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl mb-6">
               Everything Your Pet
@@ -90,14 +90,14 @@ const Index = () => {
 
       {/* Location Search */}
       <section className="py-16 bg-muted/30">
-        <div className="container">
+        <div className="container px-4 ">
           <LocationSearch />
         </div>
       </section>
 
       {/* Services Grid */}
       <section className="py-20">
-        <div className="container">
+        <div className="container px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
               Comprehensive Pet Services

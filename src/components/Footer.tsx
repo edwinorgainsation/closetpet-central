@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 const Footer = () => {
   return (
     <footer className="bg-gradient-primary text-primary-foreground">
-      <div className="container py-12">
+      <div className="container px-4  py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
@@ -65,7 +65,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+2349012675868</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />

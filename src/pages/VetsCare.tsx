@@ -60,10 +60,10 @@ const VetsCare = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen  bg-background">
       <Header />
       
-      <div className="container py-8">
+      <div className="container px-4  py-8">
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold mb-4">Veterinarians & Pet Care</h1>
@@ -161,7 +161,7 @@ const VetsCare = () => {
                     <Phone className="h-4 w-4" />
                     {vet.phone}
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-4">
                     <Button variant="outline">
                       Call Now
                     </Button>

@@ -102,7 +102,7 @@ const BookAppointment = () => {
     <div className="min-h-screen bg-background">
       <Header />
 
-      <div className="container py-8">
+      <div className="container px-4  py-8">
         {/* Back Button */}
         <div className="mb-6">
           <Link to={`/details/vet/${vetId}`}>

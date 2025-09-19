@@ -1,4 +1,3 @@
-// App.tsx
 import {
   RedirectToSignIn,
   SignedIn,
@@ -9,8 +8,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-
-// Pages
 import Index from "./pages/Index";
 import Shops from "./pages/Shops";
 import VetsCare from "./pages/VetsCare";
@@ -20,8 +17,8 @@ import Contact from "./pages/Contact";
 import Details from "./pages/Details";
 import BookAppointment from "./pages/BookAppointment";
 import BlogDetails from "./pages/BlogDetails";
-import SignUp from "./pages/SignUp";
-import Login from "./pages/Login";
+import SignUp from "@/pages/SignUp";
+import Login from "@/pages/Login";
 import Dashboard from "./pages/dashboard";
 import NotFound from "./pages/NotFound";
 

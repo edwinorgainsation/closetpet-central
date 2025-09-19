@@ -18,7 +18,7 @@ import Details from "./pages/Details";
 import BookAppointment from "./pages/BookAppointment";
 import BlogDetails from "./pages/BlogDetails";
 import SignUp from "./pages/SignUp";
-import SignIn from "./pages/Signin";
+import SignIn from "./pages/SignIn";
 import Dashboard from "./pages/dashboard";
 import NotFound from "./pages/NotFound";
 

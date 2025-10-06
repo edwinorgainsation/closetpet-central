@@ -34,7 +34,7 @@ const SignInPage = () => {
           {/* Left Column - Always First on Mobile */}
           <div className="space-y-6 order-1">
             {/* Welcome Card */}
-            <Card className="bg-gradient-primary text-primary-foreground">
+            <Card className="bg-gradient-primary text-primary-foreground md:hidden ">
               <CardContent className="p-8 text-center">
                 <Heart className="h-12 w-12 mx-auto mb-4 opacity-90" />
                 <h2 className="text-2xl font-bold mb-4">Welcome Back!</h2>
@@ -45,7 +45,7 @@ const SignInPage = () => {
             </Card>
 
             {/* Sign In Form (comes after welcome in mobile) */}
-            <Card className="bg-gradient-card border-border/50">
+            <Card className="bg-gradient-card  shadow-none">
               <CardHeader className="text-center">
                 <CardTitle className="flex items-center justify-center gap-2 text-2xl">
                   <LogIn className="h-6 w-6" />
@@ -94,6 +94,15 @@ const SignInPage = () => {
           {/* Right Column - Only seen as sidebar on larger screens */}
           <div className="space-y-6 order-2">
             {/* Features */}
+            <Card className="bg-gradient-primary text-primary-foreground hidden md:block">
+              <CardContent className="p-8 text-center">
+                <Heart className="h-12 w-12 mx-auto mb-4 opacity-90" />
+                <h2 className="text-2xl font-bold mb-4">Welcome Back!</h2>
+                <p className="text-lg opacity-90">
+                  Continue your pet care journey with personalized services and expert advice.
+                </p>
+              </CardContent>
+            </Card>
             <Card className="bg-gradient-card border-border/50">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">

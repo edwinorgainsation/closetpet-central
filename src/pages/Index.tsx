@@ -80,7 +80,7 @@ const Index = () => {
               <Button size="lg" className="bg-gradient-primary hover:opacity-90 text-lg px-8 py-6">
                 Get Started Today
               </Button>
-              <Button variant="outline" size="lg" className="text-lg bg-gradient-hero px-8 py-6">
+              <Button variant="outline" size="lg" className="text-lg bg-primary hover:opacity-70 hover:bg-primary duration-500 ease-in-out   px-8 py-6">
                 Learn More
               </Button>
             </div>

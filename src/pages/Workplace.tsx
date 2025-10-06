@@ -82,8 +82,8 @@ const Workplace = () => {
           </Card>
           <Card className="bg-gradient-card border-accent/20">
             <CardContent className="p-6 text-center">
-              <DollarSign className="h-8 w-8 mx-auto mb-2 text-accent" />
-              <div className="text-2xl font-bold mb-1 text-accent">$45K</div>
+              <DollarSign className="h-8 w-8 mx-auto mb-2 text-primary" />
+              <div className="text-2xl font-bold mb-1 text-primary">$45K</div>
               <p className="text-sm text-muted-foreground">Average Salary</p>
             </CardContent>
           </Card>

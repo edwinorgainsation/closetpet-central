@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useUser, useClerk } from "@clerk/clerk-react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Heart, UserCircle } from "lucide-react";
+import Logo from "./Logo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,10 +26,8 @@ const Header = () => {
       <div className="container px-4 flex h-16 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <div className="rounded-lg bg-gradient-primary p-2">
-            <Heart className="h-6 w-6 text-primary-foreground" />
-          </div>
-          <span className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+          <Logo/>
+          <span className="text-2xl font-bold bg-primary bg-clip-text text-transparent">
             ClosetPet
           </span>
         </Link>

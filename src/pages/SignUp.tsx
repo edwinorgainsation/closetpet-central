@@ -39,7 +39,7 @@ const SignUpPage = () => {
           {/* Left Column (mobile-first order) */}
           <div className="space-y-6 order-1">
             {/* Welcome Message */}
-            <Card className="bg-gradient-primary text-primary-foreground">
+            <Card className="bg-gradient-primary text-primary-foreground md:hidden ">
               <CardContent className="p-8 text-center">
                 <Heart className="h-12 w-12 mx-auto mb-4 opacity-90" />
                 <h2 className="text-2xl font-bold mb-4">Welcome to ClosetPet!</h2>
@@ -50,7 +50,7 @@ const SignUpPage = () => {
             </Card>
 
             {/* Sign Up Form */}
-            <Card className="bg-gradient-card border-border/50">
+            <Card className=" border-border/50 ">
               <CardHeader className="text-center">
                 <CardTitle className="flex items-center justify-center gap-2 text-2xl">
                   <UserPlus className="h-6 w-6" />
@@ -61,45 +61,40 @@ const SignUpPage = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-8">
-                <div className="flex justify-center">
-                  <SignUp
+                <div className="flex justify-center ">
+                  <SignUp 
                     afterSignUpUrl="/dashboard"
                     afterSignInUrl="/dashboard"
                     appearance={{
                       elements: {
                         formButtonPrimary:
                           "bg-gradient-primary hover:opacity-90 text-primary-foreground",
-                        card: "shadow-none border-none bg-transparent",
+                        card: "shadow-none  border-none bg-transparent",
                         headerTitle: "hidden",
                         headerSubtitle: "hidden",
                         socialButtonsBlockButton: "border-border hover:bg-muted",
                         formFieldInput: "border-border focus:border-primary",
                         footerActionLink:
-                          "text-primary hover:text-primary/80",
+                          "text-primary hover:text-primary/80 ",
                       },
                     }}
                   />
                 </div>
               </CardContent>
             </Card>
-
-            {/* Already Have Account */}
-            <Card className="bg-gradient-card border-border/50">
-              <CardContent className="p-6 text-center">
-                <p className="text-muted-foreground mb-4">
-                  Already have an account?
-                </p>
-                <Link to="/sign-in">
-                  <Button variant="outline" className="w-full">
-                    Sign In Instead
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Right Column (benefits section for large screens) */}
           <div className="space-y-6 order-2">
+            <Card className="bg-gradient-primary text-primary-foreground hidden md:block ">
+              <CardContent className="p-8 text-center">
+                <Heart className="h-12 w-12 mx-auto mb-4 opacity-90" />
+                <h2 className="text-2xl font-bold mb-4">Welcome Back!</h2>
+                <p className="text-lg opacity-90">
+                  Continue your pet care journey with personalized services and expert advice.
+                </p>
+              </CardContent>
+            </Card>
             {/* Benefits */}
             <Card className="bg-gradient-card border-border/50">
               <CardHeader>
